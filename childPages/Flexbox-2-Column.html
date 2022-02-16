@@ -4,7 +4,7 @@
     <!-- Used by Key Board-->
     <meta charset="utf-8">
 
-    <title>Laying out DIVs: view the space of semantic or HTML Tags</title>
+    <title>Flexbox</title>
 
     <!-- Used by Browser or Google Search-->
     <meta name="author" content="Daniel">
@@ -16,23 +16,57 @@
     <style>
       /* This is a syle comment */
       div {border: thin dotted red;}
+      * { box-sizing: border-box;}
+      .header {
+        border: 1px solid red;
+        padding: 15px;
+      }
+      .menu {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .main {
+        width: 75%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red
+      }
     </style>
 
   </head>
   <body>
-    <div><header><h2>Laying out DIVS, with no viewport, in h2</h2></header></div>
-    <div><nav><h2>Navigation Section, no viewport, h2</h2></nav></div>
-    <div><aside><h2>Aside Section, no viewport, in h2</h2></aside></div>
-    <div><section><article><h2>Section-Article, no viewport, in h2</h2></article></section></div>
+    <header class="header">Felxbox: INDEX as a Flexbox</h2></header></div>
+    <nav class="menu"><h3> Navigation with no viewport in h3</h3></nav>
+    <aside class="header"><p> This is the aside space with no viewport in a p-tag</p></aside>
+    <section class="main"> <h3 style="font-size:2.5vw">Section 1</h3>
+      <article>
+        <p style="font-size:1vw">Here are the links to the mandatory Experiement Pages:</p>
+        <!-- See the HTML .txt document for a summary -->
+        <ol type="A">
+          <li style="font-size:1vw"> Meta Data Example, <a href="childPages/Meta Data Example.html" target="_blank">Open this in ATOM to see meta data changes</a>
+          <li style="font-size:1vw"> Footer Blockquote Example, <a href="childPages/Footer Blockquote Example.html" target="_blank">click here</a>
+          <li style="font-size:1vw"> Template Exemplar, <a href="childPages/template.html" target="_blank">click here</a>
+          <li style="font-size:1vw"> Headings and Paragraph Tags, <a href="childPages/Headings and Paragraph Tags.html" target="_blank">click here</a>
+          <li style="font-size:1vw"> Headings and Paragraph ViewPort, <a href="childPages/Headings and Paragraph ViewPort.html" target="_blank">click here</a>
+          <li style="font-size:1vw"> Subscript and Superscript Tags, <a href="childPages/Subscript and Superscript Tags.html" target="_blank">click here</a>
+          <li style="font-size:1vw"> Image lesson, <a href="childPages/Image Lesson.html" target="_blank">click here</a>
+          <li style="font-size:1vw"> Laying out DIVs (using HTML Boilerplate), <a href="childPages/Laying out DIVs (using HTML Boilerplate).html" target="_blank">click here</a>
+          <li style="font-size:1vw"> What this index page might look like with Flexbox, <a href="childPages/Flexbox.html" target="_blank">click here</a>
+        </ol>
+      </article>
+    </section>
+    <section class="header">
+      Section 2
+    </section>
   </body>
-  <footer>
-    <div>
+  <footer class="header">
     <blockquote cite="https://www.goodhousekeeping.com/life/g5080/life-quotes/"><!-- Date Access 20220208--></blockquote>
     <p>
       <strong>Be thankful for what you have; you'll end up having more. If you concentrate on what you don't, you will never, ever have enough.</strong>
       <em>- <a href="https://www.goodhousekeeping.com/life/g5080/life-quotes/" target="_blank">Oprah Winfrey</a></em>
     </p>
     <p>&copy Daniel</p>
-  </div>
   </footer>
 </html>
